@@ -559,7 +559,10 @@ void playGame(int n)
 
             if (dead == true || leave == true)
             {
-                cout << "You have died or left the cave." << endl;
+                if(dead == true)
+                    cout << "You died!" << endl;
+                else
+                    cout << "You left the cave" << endl;
                 cout << "Your points were: " << points << endl;
                 cout << "Play again sometime" << endl;
             break;
